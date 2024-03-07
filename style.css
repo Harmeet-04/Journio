@@ -101,6 +101,7 @@
 .fbox1 {
     height: 500px;
     width: 50%;
+    
 }
 
 .fbox1 video{
@@ -117,9 +118,11 @@
     margin:0px 76px;
     overflow: hidden;
     position: relative;
+    
 }
 
 .slide {
+    border-radius: 40px;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -129,9 +132,11 @@
     transform: translateX(0);
 }
 
+
 /* Sliding area */
 .area {
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.8); /* Adjust the opacity as needed */
+    backdrop-filter: blur(10px); /* Adjust the shadow as needed */
 }
 
 .fbox2_h {
@@ -161,8 +166,46 @@
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 1px;
+    background-color: #f5f5f5; /* Set background color */
+    padding: 50px 0; /* Add padding */
 }
 
+.location-selector {
+    max-width: 600px; /* Set maximum width */
+    margin: 0 auto; /* Center align */
+    background-color: #000000; /* Set background color */
+    padding: 20px; /* Add padding */
+    border-radius: 10px; /* Add border radius */
+    background-color: rgba(0, 0, 0, 0.8); /* Adjust the opacity as needed */
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+
+.location-selector h2 {
+    text-align: center; /* Center align heading */
+    margin-bottom: 20px; /* Add margin bottom */
+}
+
+/* Custom styles for location options */
+.location-options {
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center align */
+    flex-wrap: wrap; /* Wrap items */
+}
+
+.location-option {
+    background-color: #000000; /* Set background color */
+    margin: 10px; /* Add margin */
+    padding: 15px 20px; /* Add padding */
+    border-radius: 5px; /* Add border radius */
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1); /* Add shadow */
+    cursor: pointer; /* Add cursor pointer */
+    transition: all 0.3s ease; /* Add transition */
+}
+
+.location-option:hover {
+    background-color: #e9ecef; /* Change background color on hover */
+}
 .second {
     display: flex;
 }
